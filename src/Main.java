@@ -1,25 +1,20 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello!");
+
+        int balance = 100; //сумма на счёте//
+        int addBalance = 1100; //сумма пополнения//
+        int sum = (balance + addBalance); //итоговая сумма//
+
+        System.out.println("Итоговая сумма:" + sum);
+        int bonus = 1; //количество бонусов//
+        int addBonus;
+        if (sum >= 1000) {
+            addBonus = (sum / 100 * bonus);
+        } else {
+            addBonus = 0;
+            System.out.println("Баланс:" +(sum + addBonus));
+        }
+
+
     }
-
-    int balance = 500; //сумма на счёте//
-    int addBalance = 1100; //сумма пополнения//
-    int bonus = 1; //количество бонусов//
-    int addBonus;
-    if (addBalance >= 1000)
-
-    {
-
-
-        addBonus = addBalance / 100 * bonus;
-
-    } else
-
-    {
-        addBonus = 0;
-        System.out.println("Баланс:" + (balance + addBalance + addBonus));
-    }
-
-
 }
